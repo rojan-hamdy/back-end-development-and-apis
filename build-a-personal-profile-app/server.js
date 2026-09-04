@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require("express")
 const app = express();
 const port =3000;
 
@@ -22,4 +22,4 @@ app.get('/api/profile',(req,res)=>{
 app.listen(port,()=>{
     console.log('server is listening to port 3000....');
 })
-export default app;
+module.exports = app;
